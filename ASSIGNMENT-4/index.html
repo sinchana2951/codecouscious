@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <div class="main-container">
+        <div class="headers">
+          <div class="left-header">
+            <div><span class="bold-text">Tasks</span></div>
+            <div><span class="light-text">Lists</span></div>
+          </div>
+          <div class="right-header">
+            <div class="gap">
+              <button class="btn">+</button>
+            </div>
+            <div class="add-list">Add Item</div>
+          </div>
+        </div>
+        <div class="content"></div>
+      </div>
+      <div class="category-popup">
+        <div class="category-popupinfo">Add New List</div>
+        <div><input type="text" class="category-popuptextbox" /></div>
+        <div style="display: flex;flex-wrap: wrap;justify-content: space-evenly;width: 100%;">
+          <div><button class="category-popupadd">ADD</button></div>
+          <div><button class="category-popupclose">Close</button></div>
+        </div>
+      </div>
+  
+      <div class="subTask-popup">
+        <div class="subTask-popupinfo">Add New Item</div>
+        <div><input type="text" class="subTask-popuptextbox" /></div>
+        <div style="display: flex;flex-wrap: wrap;justify-content: space-evenly;width: 100%;">
+          <div><button class="subTask-popupadd">ADD</button></div>
+          <div><button class="subTask-popupclose">Close</button></div>
+        </div>
+      </div>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>  
+</body>
+<script src="./index.js"></script>
+</html>
